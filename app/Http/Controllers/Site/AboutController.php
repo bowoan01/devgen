@@ -12,7 +12,7 @@ class AboutController extends Controller
     public function __invoke()
     {
         return view('site.about', [
-            'story' => Setting::value('about_story', 'Devengour is a boutique software house delivering beautiful, scalable solutions.'),
+            'story' => Setting::value('about_story', 'Devgenfour is a boutique software house delivering beautiful, scalable solutions.'),
             'mission' => Setting::value('about_mission', 'To empower organizations with thoughtful digital products that accelerate growth.'),
             'vision' => Setting::value('about_vision', 'A world where technology feels effortless for every team.'),
             'values' => [

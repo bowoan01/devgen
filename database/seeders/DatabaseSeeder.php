@@ -26,9 +26,9 @@ class DatabaseSeeder extends Seeder
         Schema::disableForeignKeyConstraints();
 
         $admin = User::updateOrCreate(
-            ['email' => 'admin@devengour.com'],
+            ['email' => 'admin@devgenfour.com'],
             [
-                'name' => 'Devengour Admin',
+                'name' => 'devgenfour Admin',
                 'password' => 'password',
                 'role' => 'admin',
             ]
@@ -47,7 +47,7 @@ class DatabaseSeeder extends Seeder
             [
                 'title' => 'Mobile App Development',
                 'excerpt' => 'Premium iOS and Android products that feel as good as they look.',
-                'body' => "Devengour builds delightful mobile experiences with pixel-perfect interfaces, offline-first sync, and instrumentation for continuous learning.",
+                'body' => "Devgenfour builds delightful mobile experiences with pixel-perfect interfaces, offline-first sync, and instrumentation for continuous learning.",
                 'icon_class' => 'bi bi-phone',
                 'display_order' => 2,
                 'is_featured' => true,
@@ -82,10 +82,10 @@ class DatabaseSeeder extends Seeder
             'category' => 'web',
             'summary' => 'A modular B2B commerce suite powering multi-market launches for a regional retailer.',
             'problem_text' => "Nimbus needed to unify disparate ordering experiences while supporting rapid experimentation.",
-            'solution_text' => "Devengour delivered a headless commerce architecture with design system-driven storefronts and analytics dashboards.",
+            'solution_text' => "Devgenfour delivered a headless commerce architecture with design system-driven storefronts and analytics dashboards.",
             'tech_stack' => ['Laravel', 'Vue', 'MySQL', 'Algolia'],
             'testimonial_author' => 'Raka Wijaya — Chief Digital Officer',
-            'testimonial_text' => 'Devengour felt like an extension of our own team. The platform scaled effortlessly during launch week.',
+            'testimonial_text' => 'Devgenfour felt like an extension of our own team. The platform scaled effortlessly during launch week.',
             'is_featured' => true,
             'published_at' => now()->subMonths(2),
         ]);
@@ -116,15 +116,15 @@ class DatabaseSeeder extends Seeder
         Setting::truncate();
         $settings = [
             'hero_headline' => 'We build digital experiences that scale.',
-            'hero_subheadline' => 'Devengour crafts tailor-made software, empowering teams to move faster.',
-            'about_story' => 'Founded in Jakarta, Devengour is a boutique studio helping organisations orchestrate elegant, scalable technology.',
+            'hero_subheadline' => 'Devgenfour crafts tailor-made software, empowering teams to move faster.',
+            'about_story' => 'Founded in Indramayu, Devgenfour is a boutique studio helping organisations orchestrate elegant, scalable technology.',
             'about_mission' => 'To empower teams with thoughtful digital products that move the business forward.',
             'about_vision' => 'Designing technology that feels effortless, inclusive, and future-ready.',
             'value_innovation' => 'We explore beyond the obvious to unlock bold solutions.',
             'value_collaboration' => 'We build partnerships rooted in empathy and shared goals.',
             'value_excellence' => 'We obsess over the details so our clients shine.',
-            'contact_address' => 'Jl. Sudirman No. 45, Jakarta, Indonesia',
-            'contact_email' => 'hello@devengour.com',
+            'contact_address' => 'Jl. Raya Pawidean Blok Kletak No.25, RT.06/RW.02, Pawidean, Indonesia',
+            'contact_email' => 'hello@devgenfour.com',
             'contact_phone' => '+62 812-3456-7890',
             'contact_whatsapp' => 'https://wa.me/6281234567890',
         ];

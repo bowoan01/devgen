@@ -44,7 +44,7 @@
 <div class="card border-0 shadow-sm rounded-4 mt-4">
     <div class="card-body p-4">
         <h5 class="fw-semibold mb-3">Welcome to the Command Suite</h5>
-        <p class="text-muted mb-0">From this panel you can orchestrate the services, projects, and team stories that define Devengour’s brand presence. Use the navigation to the left to manage each collection. All changes are instantly reflected on the public site.</p>
+        <p class="text-muted mb-0">From this panel you can orchestrate the services, projects, and team stories that define Devgenfour’s brand presence. Use the navigation to the left to manage each collection. All changes are instantly reflected on the public site.</p>
     </div>
 </div>
 @endsection

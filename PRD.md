@@ -1,6 +1,6 @@
 # 🧭 Product Requirements Document (PRD)
 
-### Devengour Company Profile Website
+### Devgenfour Company Profile Website
 
 **Revised — Built with Laravel + PHP + Bootstrap + LightGallery + jQuery AJAX + Yajra**
 
@@ -8,23 +8,23 @@
 
 ## 1. Overview
 
-**Product Name:** Devengour Company Profile Website
-**Purpose:** To serve as the official digital presence of Devengour — a professional software house focused on building elegant, scalable, and high-quality digital products.
+**Product Name:** Devgenfour Company Profile Website
+**Purpose:** To serve as the official digital presence of Devgenfour — a professional software house focused on building elegant, scalable, and high-quality digital products.
 **Design Style:** Smooth, simple, minimalist, and professional with blue accents.
 **Platform:** Web (desktop & mobile responsive)
-**URL:** [www.devengour.com](http://www.devengour.com) *(placeholder)*
+**URL:** [www.Devgenfour.com](http://www.Devgenfour.com) *(placeholder)*
 
 ---
 
 ## 2. Background & Goals
 
-Devengour has successfully handled multiple software development projects for various clients, but currently lacks an official website to showcase its brand and capabilities.
+Devgenfour has successfully handled multiple software development projects for various clients, but currently lacks an official website to showcase its brand and capabilities.
 This website will act as a **digital front door** — strengthening credibility, communicating expertise, and generating inbound leads.
 
 ### 🎯 Goals:
 
 * Build **brand credibility** and professional identity.
-* Present Devengour’s **services, team, and portfolio** clearly.
+* Present Devgenfour’s **services, team, and portfolio** clearly.
 * Serve as an **inbound lead generator** through contact forms.
 * Improve visibility in search results through strong SEO.
 * Provide a **professional touchpoint** for clients and partners.
@@ -34,7 +34,7 @@ This website will act as a **digital front door** — strengthening credibility,
 ## 3. Target Audience
 
 1. **Potential clients (B2B):** Startups, SMEs, and government organizations looking for software development partners.
-2. **Job seekers:** Designers, developers, and product managers interested in joining Devengour.
+2. **Job seekers:** Designers, developers, and product managers interested in joining Devgenfour.
 3. **Business partners:** Agencies or vendors seeking collaboration.
 
 ---
@@ -48,13 +48,13 @@ This website will act as a **digital front door** — strengthening credibility,
   CTA: **“Let’s Build Together” → Contact page**
 * Highlights of main services.
 * Showcase of 3 featured projects.
-* Brief introduction about Devengour.
+* Brief introduction about Devgenfour.
 * Footer with navigation, contact info, and social links.
 
 ### 👥 About Us
 
 * Company vision & mission.
-* Devengour’s story and values.
+* Devgenfour’s story and values.
 * Core team (photo, name, position, LinkedIn).
 * Core values: Innovation, Collaboration, Excellence.
 

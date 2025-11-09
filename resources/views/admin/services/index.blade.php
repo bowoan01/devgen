@@ -6,7 +6,7 @@
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
         <h2 class="h4 fw-semibold mb-1">Services Catalogue</h2>
-        <p class="text-muted mb-0">Craft clear offerings that headline the Devengour experience.</p>
+        <p class="text-muted mb-0">Craft clear offerings that headline the Devgenfour experience.</p>
     </div>
     <button class="btn btn-primary rounded-3" data-bs-toggle="modal" data-bs-target="#serviceModal" data-mode="create">Add service</button>
 </div>

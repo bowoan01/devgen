@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Contact Devengour — Let’s build together')
+@section('title', 'Contact Devgenfour — Let’s build together')
 
 @section('content')
-<section class="bg-white py-7" style="margin-top: 6rem;">
+<section class="bg-white py-7" >
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-5">

@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Devengour Services — Strategy, design & engineering')
+@section('title', 'Devgenfour Services — Strategy, design & engineering')
 
 @section('content')
-<section class="bg-white py-7" style="margin-top: 6rem;">
+<section class="bg-white py-7">
     <div class="container">
         <div class="text-center mb-5">
             <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">What we do</span>
             <h1 class="display-6 fw-semibold mt-3">From concept to continuous delivery.</h1>
-            <p class="text-muted fs-5">Devengour blends strategy, design, and engineering to craft resilient products for ambitious teams.</p>
+            <p class="text-muted fs-5">Devgenfour blends strategy, design, and engineering to craft resilient products for ambitious teams.</p>
         </div>
         <div class="row g-4">
             @foreach($services as $service)

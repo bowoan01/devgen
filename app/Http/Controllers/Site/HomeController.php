@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function __invoke()
     {
         $heroHeadline = Setting::value('hero_headline', 'We build digital experiences that scale.');
-        $heroSubheadline = Setting::value('hero_subheadline', 'Devengour crafts tailor-made software, empowering teams to move faster.');
+        $heroSubheadline = Setting::value('hero_subheadline', 'Devgenfour crafts tailor-made software, empowering teams to move faster.');
 
         return view('site.home', [
             'heroHeadline' => $heroHeadline,

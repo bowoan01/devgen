@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Devengour Portfolio — Selected Work')
+@section('title', 'Devgenfour Portfolio — Selected Work')
 
 @section('content')
-<section class="bg-white py-7" style="margin-top: 6rem;">
+<section class="bg-white py-7">
     <div class="container">
         <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-4 mb-5">
             <div>

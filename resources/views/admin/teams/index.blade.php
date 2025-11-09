@@ -6,7 +6,7 @@
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
         <h2 class="h4 fw-semibold mb-1">Core Team</h2>
-        <p class="text-muted mb-0">Tell the story of the experts behind Devengour.</p>
+        <p class="text-muted mb-0">Tell the story of the experts behind Devgenfour.</p>
     </div>
     <button class="btn btn-primary rounded-3" data-bs-toggle="modal" data-bs-target="#teamModal" data-mode="create">Add member</button>
 </div>

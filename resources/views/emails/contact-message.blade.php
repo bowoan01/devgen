@@ -14,7 +14,7 @@
         </tr>
         <tr>
             <td style="padding:32px;">
-                <p style="font-size:16px; line-height:1.6;">You've received a new contact submission via Devengour.com.</p>
+                <p style="font-size:16px; line-height:1.6;">You've received a new contact submission via Devgenfour.com.</p>
                 <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;">
                     <tr>
                         <td width="160" style="font-weight:600; padding:8px 0;">Name</td>

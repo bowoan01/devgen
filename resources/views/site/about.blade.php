@@ -1,19 +1,19 @@
 @extends('layouts.app')
 
-@section('title', 'About Devengour — Our story, mission & team')
+@section('title', 'About Devgenfour — Our story, mission & team')
 
 @section('content')
-<section class="bg-white py-7" style="margin-top: 6rem;">
+<section class="bg-white py-7" >
     <div class="container">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
-                <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3">About Devengour</span>
+                <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3">About Devgenfour</span>
                 <h1 class="display-6 fw-semibold">Engineering experiences with purpose, heart, and precision.</h1>
                 <p class="text-muted fs-5">{{ $story }}</p>
             </div>
             <div class="col-lg-6">
                 <div class="rounded-5 overflow-hidden shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1100&q=80" class="img-fluid" alt="Devengour team collaborating">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1100&q=80" class="img-fluid" alt="Devgenfour team collaborating">
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
         <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
             <div>
                 <h2 class="h3 fw-semibold mb-1">Leadership team</h2>
-                <p class="text-muted mb-0">Meet the strategists guiding every Devengour engagement.</p>
+                <p class="text-muted mb-0">Meet the strategists guiding every Devgenfour engagement.</p>
             </div>
             <a href="/contact" class="btn btn-outline-primary rounded-pill">Collaborate with us</a>
         </div>

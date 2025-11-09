@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
-@section('title', $service->title . ' — Devengour Service')
+@section('title', $service->title . ' — Devgenfour Service')
 
 @section('content')
-<section class="bg-white py-7" style="margin-top: 6rem;">
+<section class="bg-white py-7">
     <div class="container">
         <nav aria-label="breadcrumb" class="mb-4">
             <ol class="breadcrumb">

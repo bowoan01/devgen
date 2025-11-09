@@ -14,11 +14,11 @@ class ContactController extends Controller
     public function index()
     {
         return view('site.contact', [
-            'address' => Setting::value('contact_address', 'Jakarta, Indonesia'),
+            'address' => Setting::value('contact_address', 'Indramayu, Indonesia'),
             'email' => Setting::value('contact_email', config('mail.from.address')),
             'phone' => Setting::value('contact_phone', '+62 812-3456-7890'),
             'whatsapp' => Setting::value('contact_whatsapp', 'https://wa.me/6281234567890'),
-            'mapEmbed' => Setting::value('contact_map_embed', '<iframe class="w-100 rounded" src="https://maps.google.com/maps?q=Jakarta&t=&z=13&ie=UTF8&iwloc=&output=embed" height="320" allowfullscreen loading="lazy"></iframe>'),
+            'mapEmbed' => Setting::value('contact_map_embed', '<iframe class="w-100 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.79144225768752!2d108.30291775386814!3d-6.437300513775523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ec7febf73c6fd%3A0xedf5590a904f67ba!2sAIRENA%20Indramayu%20%7C%20Jasa%20Service%20AC%20Indramayu!5e0!3m2!1sid!2sid!4v1762709663680!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'),
         ]);
     }
 

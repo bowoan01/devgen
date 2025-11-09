@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Devengour — We build digital experiences that scale')
+@section('title', 'Devgenfour — We build digital experiences that scale')
 
 @section('content')
-<section class="container py-7" style="margin-top: 6rem;">
+<section class="container py-7">
     <div class="row align-items-center g-5">
         <div class="col-lg-6">
             <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3">Premium Software House</span>
@@ -28,7 +28,7 @@
             <div class="hero-visual rounded-5 shadow-lg overflow-hidden position-relative">
                 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1080&q=80" class="img-fluid" alt="Team collaborating">
                 <div class="position-absolute bottom-0 start-0 end-0 p-4 bg-gradient-dark text-white">
-                    <p class="mb-0 fw-medium">“Devengour orchestrated the entire product launch with elegance and precision.”</p>
+                    <p class="mb-0 fw-medium">“Devgenfour orchestrated the entire product launch with elegance and precision.”</p>
                     <small class="opacity-75">Ayu Tan, VP Product — Nimbus Ventures</small>
                 </div>
             </div>
@@ -64,7 +64,7 @@
     <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
         <div>
             <h2 class="h3 fw-semibold mb-1">Flagship Projects</h2>
-            <p class="text-muted mb-0">A curated showcase of platforms engineered by Devengour.</p>
+            <p class="text-muted mb-0">A curated showcase of platforms engineered by Devgenfour.</p>
         </div>
         <a href="/portfolio" class="btn btn-outline-primary rounded-pill">View all case studies</a>
     </div>
@@ -96,7 +96,7 @@
         <div class="row align-items-center g-4">
             <div class="col-lg-7">
                 <h2 class="display-6 fw-semibold">We’re a team of thinkers, designers, and engineers united by craft.</h2>
-                <p class="lead text-white-50">From strategy to ship, Devengour partners with ambitious organisations to deliver premium digital products.</p>
+                <p class="lead text-white-50">From strategy to ship, Devgenfour partners with ambitious organisations to deliver premium digital products.</p>
                 <a href="/about" class="btn btn-light btn-lg rounded-pill">Meet the team</a>
             </div>
             <div class="col-lg-5">
@@ -124,7 +124,7 @@
             <p class="text-muted fs-5">Tell us about your vision and we’ll assemble a dream team to launch it. We respond within one business day.</p>
             <div class="d-flex gap-3">
                 <a href="/contact" class="btn btn-primary btn-lg rounded-pill">Start a project</a>
-                <a href="mailto:hello@devengour.com" class="btn btn-outline-primary btn-lg rounded-pill">hello@devengour.com</a>
+                <a href="mailto:hello@Devgenfour.com" class="btn btn-outline-primary btn-lg rounded-pill">hello@Devgenfour.com</a>
             </div>
         </div>
         <div class="col-lg-5">

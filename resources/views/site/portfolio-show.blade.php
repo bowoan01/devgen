@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
-@section('title', $project->title . ' — Devengour Case Study')
+@section('title', $project->title . ' — Devgenfour Case Study')
 
 @section('content')
-<section class="bg-white py-7" style="margin-top: 6rem;">
+<section class="bg-white py-7">
     <div class="container">
         <nav aria-label="breadcrumb" class="mb-4">
             <ol class="breadcrumb">

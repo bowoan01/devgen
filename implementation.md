@@ -1,4 +1,4 @@
-# Devengour Company Profile Website — Implementation Plan
+# Devgenfour Company Profile Website — Implementation Plan
 
 *(CDN-Only • Single `web.php` • No Blade Components • No Node/Vite/Tailwind)*
 
