@@ -1,0 +1,144 @@
+:root {
+    --animate-duration: 0.75s;
+    --animate-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.fade-in,
+[data-animate="fade"] {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0);
+    will-change: opacity, transform;
+    transition: opacity var(--animate-duration) var(--animate-ease),
+        transform var(--animate-duration) var(--animate-ease);
+}
+
+.fade-up,
+[data-animate="fade-up"] {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+    will-change: opacity, transform;
+    transition: opacity var(--animate-duration) var(--animate-ease),
+        transform var(--animate-duration) var(--animate-ease);
+}
+
+.slide-in,
+[data-animate="slide-in"] {
+    opacity: 0;
+    transform: translate3d(-24px, 0, 0);
+    will-change: opacity, transform;
+    transition: opacity var(--animate-duration) var(--animate-ease),
+        transform var(--animate-duration) var(--animate-ease);
+}
+
+.zoom-in,
+[data-animate="zoom-in"] {
+    opacity: 0;
+    transform: scale3d(0.98, 0.98, 1);
+    will-change: opacity, transform;
+    transition: opacity var(--animate-duration) var(--animate-ease),
+        transform var(--animate-duration) var(--animate-ease);
+}
+
+[data-animate].is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+[data-stagger] > * {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+    transition: opacity 0.6s var(--animate-ease),
+        transform 0.6s var(--animate-ease);
+}
+
+[data-stagger].is-visible > * {
+    opacity: 1;
+    transform: none;
+}
+
+[data-stagger].is-visible > *:nth-child(1) { transition-delay: 0.05s; }
+[data-stagger].is-visible > *:nth-child(2) { transition-delay: 0.1s; }
+[data-stagger].is-visible > *:nth-child(3) { transition-delay: 0.15s; }
+[data-stagger].is-visible > *:nth-child(4) { transition-delay: 0.2s; }
+[data-stagger].is-visible > *:nth-child(5) { transition-delay: 0.25s; }
+[data-stagger].is-visible > *:nth-child(6) { transition-delay: 0.3s; }
+
+.hover-elevate {
+    transition: transform 0.3s var(--animate-ease),
+        box-shadow 0.3s var(--animate-ease);
+}
+
+.hover-elevate:hover,
+.hover-elevate:focus-visible {
+    transform: translate3d(0, -6px, 0);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.button-soft-transition {
+    transition: background-color 0.25s ease, color 0.25s ease,
+        box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.button-soft-transition:hover,
+.button-soft-transition:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.15);
+}
+
+.image-zoom {
+    overflow: hidden;
+}
+
+.image-zoom img {
+    transition: transform 0.6s var(--animate-ease);
+    transform-origin: center;
+}
+
+.image-zoom:hover img,
+.image-zoom:focus-within img {
+    transform: scale3d(1.05, 1.05, 1);
+}
+
+.nav-link-smooth {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link-smooth::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-link-smooth:hover::after,
+.nav-link-smooth:focus-visible::after,
+.nav-link-smooth.active::after {
+    transform: scaleX(1);
+}
+
+.page-transition-enter,
+.page-transition-exit {
+    transition: opacity 0.3s ease;
+}
+
+.page-transition-enter { opacity: 0; }
+.page-transition-enter.page-transition-ready { opacity: 1; }
+
+.page-transition-exit { opacity: 1; }
+.page-transition-exit.page-transition-leave { opacity: 0; }

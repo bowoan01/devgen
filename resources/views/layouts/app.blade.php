@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="{{ asset('css/animations.css') }}">
     @stack('styles')
 </head>
 
@@ -38,6 +39,7 @@
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
+    <script src="{{ asset('js/app-animations.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}"></script>
 
     @stack('scripts')

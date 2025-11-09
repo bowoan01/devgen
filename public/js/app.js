@@ -216,6 +216,7 @@
         const galleries = [
             document.getElementById("project-gallery"),
             document.getElementById("home-portfolio"),
+            ...document.querySelectorAll(".leadership-gallery"),
         ];
         galleries.forEach((el) => {
             if (el && window.lightGallery) {
@@ -225,6 +226,109 @@
                     speed: 400,
                 });
             }
+        });
+    };
+
+    const initContentSliders = () => {
+        const sliders = document.querySelectorAll("[data-slider]");
+        if (!sliders.length) return;
+
+        sliders.forEach((slider) => {
+            const track = slider.querySelector("[data-slider-track]");
+            if (!track) return;
+            const buttons = slider.querySelectorAll("[data-slider-nav]");
+            const stepRatio = parseFloat(slider.dataset.sliderStep || "0.85");
+
+            const getScrollAmount = () =>
+                Math.max(track.clientWidth * stepRatio, 240);
+
+            const updateButtons = () => {
+                const maxScroll =
+                    track.scrollWidth - track.clientWidth - 2;
+                buttons.forEach((btn) => {
+                    const dir = btn.getAttribute("data-slider-nav");
+                    if (dir === "prev") {
+                        btn.disabled = track.scrollLeft <= 10;
+                    } else {
+                        btn.disabled = track.scrollLeft >= maxScroll;
+                    }
+                });
+            };
+
+            buttons.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    const dir = btn.getAttribute("data-slider-nav");
+                    track.scrollBy({
+                        left: (dir === "next" ? 1 : -1) * getScrollAmount(),
+                        behavior: "smooth",
+                    });
+                });
+            });
+
+            track.addEventListener(
+                "wheel",
+                (event) => {
+                    if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) {
+                        return;
+                    }
+                    if (track.scrollWidth <= track.clientWidth) return;
+                    event.preventDefault();
+                    track.scrollBy({
+                        left: event.deltaY,
+                        behavior: "smooth",
+                    });
+                },
+                { passive: false }
+            );
+
+            let isDragging = false;
+            let startX = 0;
+            let scrollStart = 0;
+
+            const startDrag = (event) => {
+                isDragging = true;
+                track.classList.add("is-dragging");
+                const pageX =
+                    event.pageX || event.touches?.[0]?.pageX || 0;
+                startX = pageX;
+                scrollStart = track.scrollLeft;
+            };
+
+            const stopDrag = () => {
+                if (!isDragging) return;
+                isDragging = false;
+                track.classList.remove("is-dragging");
+            };
+
+            const dragMove = (event) => {
+                if (!isDragging) return;
+                const pageX =
+                    event.pageX || event.touches?.[0]?.pageX || 0;
+                const walk = (pageX - startX) * 1.2;
+                event.preventDefault();
+                track.scrollLeft = scrollStart - walk;
+            };
+
+            track.addEventListener("mousedown", (event) => {
+                event.preventDefault();
+                startDrag(event);
+            });
+            track.addEventListener("touchstart", startDrag, {
+                passive: true,
+            });
+            window.addEventListener("mouseup", stopDrag);
+            window.addEventListener("touchend", stopDrag);
+            track.addEventListener("mouseleave", stopDrag);
+            track.addEventListener("mousemove", dragMove);
+            track.addEventListener("touchmove", dragMove, {
+                passive: false,
+            });
+
+            track.addEventListener("scroll", updateButtons, {
+                passive: true,
+            });
+            window.addEventListener("resize", updateButtons);
+            updateButtons();
         });
     };
 
@@ -957,6 +1061,7 @@
         initContactForm();
         initLoginForm();
         initLightGallery();
+        initContentSliders();
         initServicesAdmin();
         initProjectsAdmin(); // <- area yang rusak sebelumnya, sekarang sudah tertutup rapi
         initTeamAdmin();
