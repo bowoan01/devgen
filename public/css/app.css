@@ -17,11 +17,11 @@ body {
 }
 
 .bg-gradient-azure {
-    background: radial-gradient(circle at top left, rgba(37,99,235,0.9), rgba(15,118,110,0.85));
+    background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.9), rgba(15, 118, 110, 0.85));
 }
 
 .bg-gradient-dark {
-    background: linear-gradient(160deg, rgba(15,23,42,0.9), rgba(15,23,42,0.6));
+    background: linear-gradient(160deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.6));
 }
 
 .py-6 {
@@ -117,7 +117,7 @@ body {
 }
 
 .bg-gradient-primary {
-    background: linear-gradient(135deg, rgba(37,99,235,0.95), rgba(96,165,250,0.85));
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.95), rgba(96, 165, 250, 0.85));
 }
 
 .border-dashed {
@@ -160,13 +160,44 @@ body {
 }
 
 main {
-    background: linear-gradient(180deg, rgba(244,245,249,0) 0%, #f4f5f9 100%);
+    background: linear-gradient(180deg, rgba(244, 245, 249, 0) 0%, #f4f5f9 100%);
 }
 
 .pagination .page-link {
     border-radius: 50px !important;
 }
 
-#login-feedback, #contact-feedback {
+#login-feedback,
+#contact-feedback {
     border-radius: 1rem;
+}
+
+.modal-dialog.modal-dialog-scrollable .modal-body {
+    padding-bottom: 2.5rem;
+    /* kira-kira tinggi footer */
+}
+
+/* Bikin tinggi modal pas di layar dan body bisa scroll */
+.modal-dialog.modal-dialog-scrollable .modal-content {
+    max-height: calc(100vh - 2rem);
+    /* beri ruang atas-bawah 1rem */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Body scroll saja, bukan seluruh modal */
+.modal-dialog.modal-dialog-scrollable .modal-body {
+    overflow: auto;
+}
+
+/* Footer selalu nempel di bawah modal dan di atas konten */
+.modal-footer {
+    position: sticky;
+    bottom: 0;
+    background: var(--bs-light);
+    /* sama seperti yang kamu pakai */
+    z-index: 1;
+    /* pastikan mengapung di atas body */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, .05);
+    /* biar ada pemisah halus */
 }
