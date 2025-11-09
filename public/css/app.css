@@ -1,0 +1,188 @@
+:root {
+    --devengour-primary: #2563eb;
+    --devengour-dark: #1e293b;
+    --devengour-light: #f8fafc;
+}
+
+body {
+    font-family: 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--devengour-light);
+    color: var(--devengour-dark);
+}
+
+.py-6 {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+.bg-gradient-primary {
+    background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.92), #1e3a8a);
+}
+
+.bg-gradient-secondary {
+    background: linear-gradient(120deg, #1e293b 0%, #1d4ed8 100%);
+}
+
+.service-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border-radius: 1.25rem;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(30, 64, 175, 0.12);
+}
+
+.service-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.12);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--devengour-primary);
+    font-size: 1.35rem;
+}
+
+.icon-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--devengour-primary);
+    font-size: 1.5rem;
+}
+
+.gradient-card {
+    border-radius: 1.25rem;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.18);
+}
+
+.gradient-blue { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+.gradient-indigo { background: linear-gradient(135deg, #4338ca, #312e81); }
+.gradient-purple { background: linear-gradient(135deg, #7c3aed, #5b21b6); }
+.gradient-teal { background: linear-gradient(135deg, #0f766e, #0f172a); }
+
+.prose {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.table td:last-child, .table th:last-child {
+    text-align: right;
+}
+
+#project-gallery img {
+    transition: transform 0.3s ease;
+}
+
+#project-gallery img:hover {
+    transform: scale(1.02);
+}
+
+#contact-form .form-control, #admin-login-form .form-control {
+    border-radius: 0.85rem;
+}
+
+.btn {
+    border-radius: 999px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+#contact-alert {
+    border-radius: 1rem;
+}
+
+.badge.bg-primary-subtle {
+    background-color: rgba(37, 99, 235, 0.12) !important;
+    color: var(--devengour-primary) !important;
+}
+
+.modal-content {
+    border-radius: 1.2rem;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.card {
+    border-radius: 1.25rem;
+}
+
+.card img {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
+
+.alert {
+    border-radius: 1rem;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: rgba(37, 99, 235, 0.04);
+}
+
+.table thead {
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.table thead th {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.ratio iframe {
+    border: 0;
+}
+
+#project-gallery-preview .gallery-item {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#project-gallery-preview .remove-image {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(15, 23, 42, 0.72);
+    border: none;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge {
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.btn-light {
+    color: var(--devengour-primary);
+}
