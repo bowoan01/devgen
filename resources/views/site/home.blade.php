@@ -80,23 +80,23 @@
             @foreach ($projects as $project)
                 @php($cover = $project->images->first())
                 <div class="col-md-6 col-xl-4">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-elevate"
+                    <div class="card h-100 border-0 shadow-sm rounded-4 hover-elevate portfolio-card d-flex flex-column"
                         data-animate="fade-up">
                         @if ($cover)
-                            {{-- <a href="{{ asset('storage/'.$cover->file_path) }}" class="gallery-item" data-sub-html="<h4>{{ $project->title }}</h4><p>{{ $project->summary }}</p>">
-                            <img src="{{ asset('storage/'.$cover->file_path) }}" class="img-fluid" alt="{{ $project->title }} cover">
-                        </a> --}}
-                            <img src="{{ asset('storage/' . $cover->file_path) }}" class="img-fluid"
-                                alt="{{ $project->title }} cover">
+                            <a href="{{ asset('storage/' . $cover->file_path) }}" class="gallery-item d-block portfolio-image"
+                                data-sub-html="<h4>{{ $project->title }}</h4><p>{{ $project->summary }}</p>">
+                                <img src="{{ asset('storage/' . $cover->file_path) }}" class="portfolio-cover"
+                                    alt="{{ $project->title }} cover">
+                            </a>
                         @else
-                            <div class="ratio ratio-16x9 bg-light"></div>
+                            <div class="portfolio-image bg-light"></div>
                         @endif
-                        <div class="card-body p-4">
+                        <div class="card-body p-4 d-flex flex-column">
                             <span
                                 class="badge bg-primary-subtle text-primary mb-2 text-uppercase">{{ $project->category }}</span>
                             <h3 class="h5 fw-semibold">{{ $project->title }}</h3>
-                            <p class="text-muted">{{ $project->summary }}</p>
-                            <a href="/portfolio/{{ $project->slug }}" class="text-decoration-none fw-semibold">Read case
+                            <p class="text-muted flex-grow-1">{{ $project->summary }}</p>
+                            <a href="/portfolio/{{ $project->slug }}" class="text-decoration-none fw-semibold mt-3">Read case
                                 study →</a>
                         </div>
                     </div>

@@ -76,19 +76,7 @@ class DatabaseSeeder extends Seeder
 
         ProjectImage::truncate();
         Project::truncate();
-        $project = Project::create([
-            'title' => 'Nimbus Commerce Platform',
-            'slug' => 'nimbus-commerce-platform',
-            'category' => 'web',
-            'summary' => 'A modular B2B commerce suite powering multi-market launches for a regional retailer.',
-            'problem_text' => "Nimbus needed to unify disparate ordering experiences while supporting rapid experimentation.",
-            'solution_text' => "Devgenfour delivered a headless commerce architecture with design system-driven storefronts and analytics dashboards.",
-            'tech_stack' => ['Laravel', 'Vue', 'MySQL', 'Algolia'],
-            'testimonial_author' => 'Raka Wijaya — Chief Digital Officer',
-            'testimonial_text' => 'Devgenfour felt like an extension of our own team. The platform scaled effortlessly during launch week.',
-            'is_featured' => true,
-            'published_at' => now()->subMonths(2),
-        ]);
+        $this->call(ProjectSeeder::class);
 
         TeamMember::truncate();
         TeamMember::create([
